@@ -11,6 +11,7 @@ class Agent:
                         such as agent type, geolocation, and other properties.
     Metadata example:
         {
+            "timestamp": "2024-11-18 15:30:00"
             "agent_type": "Ship",
             "location": "North Sea",
             "geolocation": {
