@@ -1,17 +1,34 @@
-from typing import List, Dict
+from typing import Dict, Optional, Any
 
 class Agent:
-    def __init__(self, identifier: str, public_key: str,
-                 agent_type: str = None, issued_hashes: List[Dict] = None):
+    """
+    Represents an agent.
+    
+    Attributes:
+    identifier (str): Unique identifier for the agent.
+    public_key (str): Public key associated with the agent.
+    metadata (dict): Metadata containing additional agent-specific details, 
+                        such as agent type, geolocation, and other properties.
+    Metadata example:
+        {
+            "agent_type": "Ship",
+            "location": "North Sea",
+            "geolocation": {
+                "latitude": 12.34,
+                "longitude": 56.78
+            }
+        }
+    """
+    def __init__(self, identifier: Optional[str],
+                public_key: Optional[str],
+                metadata: Optional[dict] = None):
         self.identifier = identifier
         self.public_key = public_key
-        self.agent_type = agent_type if agent_type is not None else {} 
-        self.issued_hashes = issued_hashes if issued_hashes is not None else []
+        self.metadata = metadata if metadata is not None else {}
 
-    def to_dict(self):
+    def to_dict(self) -> Dict[str, Any]:
         return {
             "identifier": self.identifier,
             "public_key": self.public_key,
-            "agent_type": self.agent_type,
-            "issued_hashes": self.issued_hashes      
+            "metadata": self.metadata
         }
