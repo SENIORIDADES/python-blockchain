@@ -1,0 +1,41 @@
+[
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-18 17:53:23",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N12346",
+        "public_key": "2975c41bb018f489c2497660c11cd186644c3fc47fd592307de3c89893c5f631",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-18 17:59:46",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N12347",
+        "public_key": "12f495cd6dec0ee92ffe5c60e60379ce100ba0113a8908a4337043e68ca37711",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-18 18:04:02",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    }
+]
