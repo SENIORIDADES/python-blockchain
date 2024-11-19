@@ -1,0 +1,47 @@
+ def _save_to_local_storage(self, dados):
+        """
+        Salva o hash aprovado no JSON local do container.
+        """
+        if not os.path.exists(self.JSON_PATH):
+            with open(self.JSON_PATH, 'w') as f:
+                json.dump([], f)
+
+        with open(self.JSON_PATH, 'r+') as f:
+            conteudo = json.load(f)
+            conteudo.append(dados)
+            f.seek(0)
+            json.dump(conteudo, f, indent=4)
+        print("Hash salvo no JSON local com sucesso.")
+
+    def _abort(self, dados):
+        """
+        Ação de abortar ou rejeitar o hash com base na posição do conteúdo no JSON.
+        """
+        if os.path.exists(self.JSON_PATH):
+            with open(self.JSON_PATH, 'r+') as f:
+                conteudo = json.load(f)
+
+                # Verifica se o JSON está vazio (primeiro conteúdo) ou contém mais de dois itens
+                if not conteudo:
+                    # Primeiro conteúdo: Exclui o container
+                    print("Primeiro conteúdo rejeitado. Excluindo o container.")
+                    self._remove_container()
+                elif len(conteudo) >= 2:
+                    # A partir do terceiro conteúdo: Exclui o conteúdo rejeitado apenas
+                    if dados in conteudo:
+                        conteudo.remove(dados)
+                        f.seek(0)
+                        f.truncate()
+                        json.dump(conteudo, f, indent=4)
+                        print("Conteúdo rejeitado removido do JSON local.")
+        else:
+            print("JSON não encontrado. Abortando sem ações adicionais.")
+
+    def _remove_container(self):
+        """
+        Finaliza e remove o próprio container.
+        """
+        current_container = self.client.containers.get(self.hostname)
+        current_container.stop()
+        current_container.remove()
+        print(f"Container {current_container.name} foi excluído devido à rejeição do hash.")
