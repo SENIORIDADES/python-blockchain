@@ -1,5 +1,5 @@
-from .block_service import BlockService
-from ..models.block_model import Block
+from .blockService import BlockService
+from app.models import Block
 
 class Blockchain:
   def __init__(self):
