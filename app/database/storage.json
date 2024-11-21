@@ -37,5 +37,330 @@
                 "longitude": null
             }
         }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:03:07",
+            "location": "Southern Ocean",
+            "geolocation": {
+                "latitude": -85.13882991049262,
+                "longitude": 159.47837195719615
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:03:59",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -64.10817293581633,
+                "longitude": -124.061755770433
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:12:05",
+            "location": "Arctic Ocean",
+            "geolocation": {
+                "latitude": 77.39848280294753,
+                "longitude": -78.85161072587434
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:12:12",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -85.43625822278474,
+                "longitude": 65.07187225942721
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:12:14",
+            "location": "Southern Ocean",
+            "geolocation": {
+                "latitude": -84.64699104509955,
+                "longitude": 0.537861278692418
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:15:03",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -76.9106067237846,
+                "longitude": -82.71603493218635
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:17:39",
+            "location": "Southern Ocean (Antarctic)",
+            "geolocation": {
+                "latitude": -62.857693788640304,
+                "longitude": 47.49387298568257
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:44:14",
+            "location": "Southern Ocean (Antarctic)",
+            "geolocation": {
+                "latitude": -68.18461760145294,
+                "longitude": -120.66199006708393
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:44:20",
+            "location": "Southern Ocean",
+            "geolocation": {
+                "latitude": -71.79466594573708,
+                "longitude": -168.89209378141618
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:44:23",
+            "location": "Southern Ocean",
+            "geolocation": {
+                "latitude": -88.82316172065295,
+                "longitude": 6.082680928580487
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:46:41",
+            "location": "Arctic Ocean",
+            "geolocation": {
+                "latitude": 75.28410288736706,
+                "longitude": -35.40928983082992
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:48:10",
+            "location": "Arctic Ocean",
+            "geolocation": {
+                "latitude": 66.74679387889189,
+                "longitude": -87.97298472535101
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:48:33",
+            "location": "Pacific Ocean",
+            "geolocation": {
+                "latitude": 33.99567811397682,
+                "longitude": -68.70726048646301
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:57:31",
+            "location": "Arctic Ocean",
+            "geolocation": {
+                "latitude": 65.66697987004281,
+                "longitude": 59.61681189853414
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:58:18",
+            "location": "Pacific Ocean",
+            "geolocation": {
+                "latitude": 1.9030111993853325,
+                "longitude": -158.8558139674451
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 00:59:50",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.65158162117126,
+                "longitude": -143.98526643215857
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:18:49",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.69074540457753,
+                "longitude": -144.29200295849495
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:18:56",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.69033163762565,
+                "longitude": -144.2906920556115
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:18:58",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.69031466792656,
+                "longitude": -144.2900884522717
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:18:59",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.69024408869099,
+                "longitude": -144.29019198649792
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:19:00",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.69018263759622,
+                "longitude": -144.29001749481512
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:19:00",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.69018263759622,
+                "longitude": -144.29001749481512
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:21:14",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.6821842630907,
+                "longitude": -144.31470426147115
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:22:36",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.6816781535135,
+                "longitude": -144.28989508608007
+            }
+        }
+    },
+    {
+        "identifier": "N12348",
+        "public_key": "a354dd79fe07a1ddbfc1454f91ac8332b1e5d5395b1254b59b93b82d26ca8afa",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 01:41:29",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
     }
 ]
