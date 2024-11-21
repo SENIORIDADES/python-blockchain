@@ -131,56 +131,58 @@ class LocationService():
     
     @staticmethod
     def locationService(identifier: str):
-      """
-      Recupera a localização do agente com o identificador fornecido e
-      monta o metadata.
-      """
-      try:
-        # Recupera o último agente
-        agent = LocationService._get_last_agent(
-            'app/database/storage.json', identifier
+        """
+        Recupera a localização do agente com o identificador fornecido e
+        monta o metadata.
+        """
+        try:
+            # Recupera o último agente
+            agent = LocationService._get_last_agent(
+                'app/database/storage.json', identifier
             )
-        
-        if not agent['success']:
+            
+            if not agent['success']:
+                return {
+                    "success": False,
+                    "error": agent['error']
+                }
+            
+            ocean_locations = LocationService.ocean_locations
+            agent_type = agent.get('data', {}).get('metadata', {}).get('agent_type')
+            last_timestamp = agent.get('data', {}).get('metadata', {}).get('timestamp')
+            current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                
+            # Calcula a diferença de tempo em horas (usando o timestamp atual)
+            if last_timestamp:
+                time_diff = (datetime.datetime.strptime(current_timestamp, "%Y-%m-%d %H:%M:%S") - 
+                            datetime.datetime.strptime(last_timestamp, "%Y-%m-%d %H:%M:%S")).total_seconds() / 3600
+            else:
+                time_diff = 0  # Se não houver timestamp, não calcula a diferença de tempo
+            
+            latitude, longitude, ocean_name = LocationService._get_location_coordinates(
+                agent['data']['metadata'], time_diff, ocean_locations
+            )
+            
+            # Montando o novo metadata
+            metadata = {
+                "agent_type": agent_type,
+                "timestamp": current_timestamp,
+                "location": ocean_name,
+                "geolocation": {
+                    "latitude": latitude,
+                    "longitude": longitude
+                }
+            }
+             
+            return {
+                "success": True,
+                "data": metadata,
+                "error": ""
+            }
+      
+        except Exception as e:
             return {
                 "success": False,
-                "error": agent['error']
+                "data": {},
+                "error": f"Erro ao processar a localização: {str(e)}"
             }
-        
-        ocean_locations = LocationService.ocean_locations
-        agent_type = agent.get('data', {}).get('metadata',{}).get('agent_type')
-        last_timestamp = agent.get('data', {}).get('metadata',{}).get('timestamp')
-        current_timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            
-        # Calcula a diferença de tempo em horas (usando o timestamp atual)
-        if last_timestamp:
-          time_diff = (datetime.datetime.strptime(current_timestamp, "%Y-%m-%d %H:%M:%S") -
-                        datetime.datetime.strptime(last_timestamp, "%Y-%m-%d %H:%M:%S")).total_seconds() / 3600
-        else:
-          time_diff = 0  # Se não houver timestamp, não calcula a diferença de tempo
-
-          latitude, longitude, ocean_name = LocationService._get_location_coordinates(
-              agent['data']['metadata'], time_diff, ocean_locations
-          )
-          #Montando o novo metadata
-          metadata = {
-              "agent_type": agent_type,
-              "timestamp": current_timestamp,
-              "location": ocean_name,
-              "geolocation": {
-                  "latitude": latitude,
-                  "longitude": longitude
-              }
-          }
-
-          return {
-              "success": True,
-              "data": metadata,
-              "error": ""
-          }
-      except Exception as e:
-          return {
-              "success": False,
-              "data": {},
-              "error": f"Erro ao processar a localização: {str(e)}"
-          }

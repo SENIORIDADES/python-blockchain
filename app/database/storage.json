@@ -362,5 +362,44 @@
                 "longitude": null
             }
         }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:14:30",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.48911440233692,
+                "longitude": -144.82593404254445
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:14:39",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.48968135441093,
+                "longitude": -144.82740098768977
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:15:24",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -75.48784913185068,
+                "longitude": -144.83872938769014
+            }
+        }
     }
 ]
