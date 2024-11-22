@@ -13,9 +13,9 @@
                 "navios"
             ],
             "mapping": "Geografico",
-            "timestamp": "2024-11-22 01:49:05"
+            "timestamp": "2024-11-22 02:59:55"
         },
-        "hash": "be368475eaa70669cb0345e21221e6691313bb951f3334a041ca36ad626ee763"
+        "hash": "de31ffccc14aeaca0f37049b9373abb26009b215bf647ac43cef70d0b0e11fc9"
     },
     {
         "data": {
@@ -23,15 +23,236 @@
             "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
             "metadata": {
                 "agent_type": "Ship",
-                "timestamp": "2024-11-22 02:05:52",
-                "location": "Antarctic Ocean",
+                "timestamp": "2024-11-22 02:59:55",
+                "location": "",
                 "geolocation": {
-                    "latitude": -72.60573864076703,
-                    "longitude": -165.1500144590021
+                    "latitude": null,
+                    "longitude": null
                 }
             }
         },
-        "previous_hash": "be368475eaa70669cb0345e21221e6691313bb951f3334a041ca36ad626ee763",
-        "hash": "c83b57c51a8db91f579d8a9d997565a95efb46d2c9cc7ae26b2bbe10338a64a9"
+        "previous_hash": "de31ffccc14aeaca0f37049b9373abb26009b215bf647ac43cef70d0b0e11fc9",
+        "hash": "79522915aa1c8a5c67074ff54e14cfcac0090565695b7c54e25e7f927677cd31"
+    },
+    {
+        "data": {
+            "identifier": "N12346",
+            "public_key": "2975c41bb018f489c2497660c11cd186644c3fc47fd592307de3c89893c5f631",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:07:28",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "79522915aa1c8a5c67074ff54e14cfcac0090565695b7c54e25e7f927677cd31",
+        "hash": "48a82fc8e86dda1825b2e4841930bf65f7771b4eb3e4bdce4cdb14bd5ae84352"
+    },
+    {
+        "data": {
+            "identifier": "N12347",
+            "public_key": "12f495cd6dec0ee92ffe5c60e60379ce100ba0113a8908a4337043e68ca37711",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:09:19",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "48a82fc8e86dda1825b2e4841930bf65f7771b4eb3e4bdce4cdb14bd5ae84352",
+        "hash": "0d53d65da817d4af61f5fec0a94ce1da34620f3a70c26f6bd5b18ac4b576dfdd"
+    },
+    {
+        "data": {
+            "identifier": "N12349",
+            "public_key": "4ac33413350fd2344622266141117ffab3d81c06beacbc4fdab9ee4d9ffc5395",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:14:32",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "0d53d65da817d4af61f5fec0a94ce1da34620f3a70c26f6bd5b18ac4b576dfdd",
+        "hash": "903d4dde1fbbc924baaa96a70198d620a844491e871dd59c43d9a42d6c0bfc76"
+    },
+    {
+        "data": {
+            "identifier": "N22349",
+            "public_key": "d7ed52f4d516bc4572ab49fcdf7f4f943a083b9b218a655e32fd7042a704df40",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:15:57",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "903d4dde1fbbc924baaa96a70198d620a844491e871dd59c43d9a42d6c0bfc76",
+        "hash": "b3274841b5b1f54e321b0fa4357486c57f47dd9fed39e0f8bb7ffe1c73d9f809"
+    },
+    {
+        "data": {
+            "identifier": "N22359",
+            "public_key": "9b9a298df97554161d63b0140129f511db8dca6445ff58f1f68531babe584a5e",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:20:00",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "b3274841b5b1f54e321b0fa4357486c57f47dd9fed39e0f8bb7ffe1c73d9f809",
+        "hash": "7b3f6485f5c47f5e3ede0bb1a1ce955078d531c063b1aa27b3ae669f214d9072"
+    },
+    {
+        "data": {
+            "identifier": "N22358",
+            "public_key": "a6003c48927d6b54e68b47bdfe1db15e35019b4ab73f34472be9188d4f5e38db",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:25:30",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "7b3f6485f5c47f5e3ede0bb1a1ce955078d531c063b1aa27b3ae669f214d9072",
+        "hash": "179f98e99ca9016b61d3838688011b3a422e1607383fe80e91b9f83937eea317"
+    },
+    {
+        "data": {
+            "identifier": "N22658",
+            "public_key": "e37da120565d1c81621cb1b74218a66f2e42f982243583edd01e1962b5bf7139",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:52:14",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "179f98e99ca9016b61d3838688011b3a422e1607383fe80e91b9f83937eea317",
+        "hash": "eb3b887ee9f8c916cfe28e4e3da9c8900b24d5623115ae4ab60ab98f1ba9b54e"
+    },
+    {
+        "data": {
+            "identifier": "N22678",
+            "public_key": "deebbd7485335b516eb1d3950790ad892b5ff3f8f7d3b4a6aa38f641931f41de",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:53:58",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "eb3b887ee9f8c916cfe28e4e3da9c8900b24d5623115ae4ab60ab98f1ba9b54e",
+        "hash": "076cb7548ccc627b7fba6d8926b6d484e4a23c68548eb94d6173d83138b3983e"
+    },
+    {
+        "data": {
+            "identifier": "N11111",
+            "public_key": "cad07ac7abd7e9d935eac336183866bbbc52cc08bc18b9127216d67cbccf7c0e",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 03:57:17",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "076cb7548ccc627b7fba6d8926b6d484e4a23c68548eb94d6173d83138b3983e",
+        "hash": "17b9f5dae7d6e62df7388fde43691dd1548f28def7a658993913aed82e92c684"
+    },
+    {
+        "data": {
+            "identifier": "N11112",
+            "public_key": "12be5626e68f66dde56ee7b753a1532678eadaaf5fa710101743f4e1a262f147",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 04:01:08",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "17b9f5dae7d6e62df7388fde43691dd1548f28def7a658993913aed82e92c684",
+        "hash": "b0a3288f0cd0d2651eaea4f20251d01fb5b5bd87de0b23ae536d51021f4a6631"
+    },
+    {
+        "data": {
+            "identifier": "N11122",
+            "public_key": "ba4137aeef9c1b141b9d6c1b848f9ee2f269b5d08e08a58f810265ce3cccee85",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 04:09:05",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "b0a3288f0cd0d2651eaea4f20251d01fb5b5bd87de0b23ae536d51021f4a6631",
+        "hash": "ce768ff44b4d19a7ab30ff697edc0dceba904b055948451f29ee9c14683c64d1"
+    },
+    {
+        "data": {
+            "identifier": "N11222",
+            "public_key": "0cf7cd0be464c6a4427794e1b910bb03cb5f47bafe99e3cd1c99577612ab7b33",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 04:10:42",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "ce768ff44b4d19a7ab30ff697edc0dceba904b055948451f29ee9c14683c64d1",
+        "hash": "321661b25e1f6f518b01ff372fd40e7b930d878597aceba006139010c65a2ddb"
+    },
+    {
+        "data": {
+            "identifier": "N12222",
+            "public_key": "c0290cdff9b90b9bf7d8c794b688be66c8ac114c1d70c478ac8ae635af767ec9",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 04:13:38",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "321661b25e1f6f518b01ff372fd40e7b930d878597aceba006139010c65a2ddb",
+        "hash": "3276a665b457322315ba8767ad9b0f499d26aa821e7c88874c44ba5289aa651b"
     }
 ]

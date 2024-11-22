@@ -3,6 +3,7 @@ from http import HTTPStatus
 from app.services import AgentService
 from ..services.locationService import LocationService
 from ..services.blockService import BlockService
+from ..services.dockerService import DockerService
 
 # Definindo os blueprints para login e adicionar agente
 login_routes = Blueprint('login', __name__)
@@ -55,6 +56,9 @@ def login():
             return jsonify({"Message": "Agente não localizado na blockchain"}), HTTPStatus.UNAUTHORIZED   
         
     print("Debug: Agente localizado com sucesso!")
+    print("Debug: Acessando a rede...")
+    container_service = DockerService()
+    container_service.find_container(identifier_request)
     print("Debug: Login bem-sucedido")
     # Retorna mensagem de sucesso no login
     return jsonify({"Message": "Login bem-sucedido"}), HTTPStatus.OK
@@ -98,6 +102,11 @@ def add_agent():
         print("Debug: Iniciando autenticação blockchain...")
         block_service = BlockService()
         block_service.add_block(data)
+
+        print("Debug: Acessando a rede...")
+        container_service = DockerService()
+        container_service.start_container(identifier_request)
+
         # Retorna os dados do agente criado com sucesso
         return jsonify(response["data"]), HTTPStatus.CREATED
 
