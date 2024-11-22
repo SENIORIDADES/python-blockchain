@@ -180,5 +180,18 @@
                 "longitude": null
             }
         }
+    },
+    {
+        "identifier": "N22222",
+        "public_key": "6121c519bb85f5bbcf364e94ec2a5bd5e143dafcc81fef814d3e4fd04ed5ed8c",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 04:23:30",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
     }
 ]

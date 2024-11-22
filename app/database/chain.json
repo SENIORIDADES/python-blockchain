@@ -254,5 +254,22 @@
         },
         "previous_hash": "321661b25e1f6f518b01ff372fd40e7b930d878597aceba006139010c65a2ddb",
         "hash": "3276a665b457322315ba8767ad9b0f499d26aa821e7c88874c44ba5289aa651b"
+    },
+    {
+        "data": {
+            "identifier": "N22222",
+            "public_key": "6121c519bb85f5bbcf364e94ec2a5bd5e143dafcc81fef814d3e4fd04ed5ed8c",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 04:23:30",
+                "location": "",
+                "geolocation": {
+                    "latitude": null,
+                    "longitude": null
+                }
+            }
+        },
+        "previous_hash": "3276a665b457322315ba8767ad9b0f499d26aa821e7c88874c44ba5289aa651b",
+        "hash": "87174e0e56ff5a841f33602a5cb7e393ea8b81cd474752f4c03b03935fb6deb6"
     }
 ]
