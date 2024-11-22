@@ -34,44 +34,6 @@ class BlockService:
         genesis_block["hash"] = BlockService._calculate_hash(genesis_block)
         return genesis_block
 
-    def is_valid(self):
-        """
-        Verifica se a blockchain é válida.
-
-        Retorna:
-        - True: Se a blockchain estiver íntegra.
-        - False: Caso contrário.
-        """
-        # Verificar se a cadeia está vazia
-        if not self.chain:
-            print("A blockchain está vazia.")
-            return False
-
-        # Iterar sobre os blocos da blockchain, começando do segundo bloco (índice 1)
-        for i in range(1, len(self.chain)):
-            current_block = self.chain[i]
-            previous_block = self.chain[i - 1]
-
-            # Verificar se o hash do bloco atual é válido
-            recalculated_hash = self._calculate_hash(current_block)
-            if current_block["hash"] != recalculated_hash:
-                print(f"Hash inválido no bloco {i}.")
-                return False
-
-            # Verificar se o previous_hash do bloco atual corresponde ao hash do bloco anterior
-            if current_block["previous_hash"] != previous_block["hash"]:
-                print(f"Previous hash inválido no bloco {i}.")
-                return False
-
-        # Verificar se o bloco gênesis é válido (opcional)
-        genesis_block = self.chain[0]
-        if genesis_block["previous_hash"] != "00000000000000000000000000000000":
-            print("O bloco gênesis tem um previous_hash inválido.")
-            return False
-
-        print("Blockchain válida.")
-        return True
-
     def find_block(self, identifier:str) -> dict:
         """
         Busca um bloco na blockchain pelo identificador.
@@ -97,6 +59,7 @@ class BlockService:
             genesis_block = self._create_genesis_block()
             self.chain.append(genesis_block)
             print("Debug: Bloco gênesis criado com sucesso")
+            JsonService.save_json(self.json_path, self.chain)
 
         # Adiciona um novo bloco
         print("Debug: Adicionando novo bloco...")
@@ -107,7 +70,8 @@ class BlockService:
         }
         new_block["hash"] = self._calculate_hash(new_block)
         self.chain.append(new_block)
-        print(f"Debug: Novo bloco adicionado com sucesso")
 
+    
         # Salva a blockchain
         JsonService.save_json(self.json_path, self.chain)
+        print(f"Debug: Novo bloco adicionado com sucesso")
