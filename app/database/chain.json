@@ -1,0 +1,71 @@
+[
+    {
+        "previous_hash": "00000000000000000000000000000000",
+        "data": {
+            "client": "PetroLocus",
+            "description": "Registro de jazidas de Petr\u00f3leo",
+            "security_protocols": [
+                "HTTP/JSON"
+            ],
+            "consensus_mechanism": "Majority Consensus",
+            "technology_integration": [
+                "Drones",
+                "navios"
+            ],
+            "mapping": "Geografico",
+            "timestamp": "2024-11-22 00:53:12"
+        },
+        "hash": "d28485cd4bda874651d1df41562962a44985884d639ce41dd71bd8e38258dbd2"
+    },
+    {
+        "data": {
+            "identifier": "N12345",
+            "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 00:53:12",
+                "location": "Antarctic Ocean",
+                "geolocation": {
+                    "latitude": -72.39485786799773,
+                    "longitude": -165.05267931669846
+                }
+            }
+        },
+        "previous_hash": "d28485cd4bda874651d1df41562962a44985884d639ce41dd71bd8e38258dbd2",
+        "hash": "d3885c4d361d1614c34cd9d7dc9ef3bbf72c0b1c320af79cb113d39478a105d4"
+    },
+    {
+        "data": {
+            "identifier": "N12345",
+            "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 00:55:38",
+                "location": "Antarctic Ocean",
+                "geolocation": {
+                    "latitude": -72.40364933662322,
+                    "longitude": -165.07432283836727
+                }
+            }
+        },
+        "previous_hash": "d3885c4d361d1614c34cd9d7dc9ef3bbf72c0b1c320af79cb113d39478a105d4",
+        "hash": "1e35067272bec4e532815f5eb8a2caab72ac447ab348e506e3a8da828d9ea6a7"
+    },
+    {
+        "data": {
+            "identifier": "N12345",
+            "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+            "metadata": {
+                "agent_type": "Ship",
+                "timestamp": "2024-11-22 00:59:09",
+                "location": "Antarctic Ocean",
+                "geolocation": {
+                    "latitude": -72.41099374246237,
+                    "longitude": -165.02789559512752
+                }
+            }
+        },
+        "previous_hash": "1e35067272bec4e532815f5eb8a2caab72ac447ab348e506e3a8da828d9ea6a7",
+        "hash": "d1f6a588c818523a53dd5aac8b9eb33038e7d4e6922b47a428aceb50de3f1eb8"
+    }
+]

@@ -401,5 +401,473 @@
                 "longitude": -144.83872938769014
             }
         }
+    },
+    {
+        "identifier": "N12239",
+        "public_key": "9e4f44975aa2211f08a9f5916423b1f04537734bb1c9cbe403fd9979d5802768",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:33:59",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N22239",
+        "public_key": "fcfa5f50bfdb63adb6c40081e05bb559dfd1c813ae5d992f2d6f3a161950d609",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:35:45",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N32239",
+        "public_key": "e01d6074768d98d5abe2cec0f5fd19ef84e914d2165238af2455c3f65cf6c94f",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:37:19",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N33239",
+        "public_key": "0821067e3cf10d86cbb786439b3d158c183e772d267f04dcaf722d93a83e72ff",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 02:39:07",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N35239",
+        "public_key": "be6ee12eecfb6a2e2860ada27239d29cb70c263e1f225bfefe7b149e5f0a4964",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:30:29",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N35249",
+        "public_key": "03f154f697423ea1213ea38b46bd70bfa8766f0493f69ab284d7a5c07e86fa49",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:30:56",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N33649",
+        "public_key": "884fab939fe56b026ac23f755e7a86acf16eb52652a93e8bf9913497b980894c",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:33:27",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N33749",
+        "public_key": "8ad1b8e6b3dce324a4dd149d9cedbdde3a5ccf00c86ec919a8e667ee0276540e",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:45:43",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N33779",
+        "public_key": "c6bd160c9f240d5515c7b10d41297aef60cbfd1d20cefc69a3d1dad1e2e0a08b",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:48:06",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N33789",
+        "public_key": "08fd8af97b3c52212eb1ba44601ad25a107ff33ab9c0bb27c47a7a6e4221ae6b",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:48:42",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N35789",
+        "public_key": "2534cccdeb5fa04085c516ec15c7573435acc606b595573f97a0c505cee22235",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:49:46",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N65789",
+        "public_key": "93bfab0382be91c0b2859d58c330605c2e5fd67b56f9b442a61030ed816e2cb3",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:52:16",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N61789",
+        "public_key": "3fef9b17c6a5307784bf0e0edced89fdc07200beaf4b5b5be29bcaae438397e5",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:52:33",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N68789",
+        "public_key": "47ed61e58335bb43e83b96209dfcf967029f5beee2edc5ca2dd988ca1812c507",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:54:46",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N61289",
+        "public_key": "13c3fe1dbaec4b5c1577b611f2096292ba80367f6d0e1846cc88f76969897b57",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:55:28",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N61219",
+        "public_key": "756f065c2585b671ebe40ef8769a9762841d27560462ac3302c20923a8f5a05c",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:55:38",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N61229",
+        "public_key": "43d4b69ec82ac8976ca1c89efda0985fcbed9ad59c04ba0c916265b1dca12c2a",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 04:58:08",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N61222",
+        "public_key": "b666d0729fd3d1f5032ade3fafc9c4fd13a7b5f0a9ff9ca476f2011bfdbb32e7",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:01:50",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N62111",
+        "public_key": "20945abc6cf2915939497646c588bfd5db2f7e73a42444e4627d741a80b2d706",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:02:52",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N62211",
+        "public_key": "ee216238cbf49079ac49dc05b326ccc2a4e7909142201f62399ae0267c21e4f1",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:04:04",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N62221",
+        "public_key": "926a775a815af2c283d1e47cb5dd5b68b43157ef18e39eac61f6b7da5c2843a4",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:06:55",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N62222",
+        "public_key": "b920abdb530cf0d39493b4d4bc2e3468e93c60f68105c5038ee1d39f0ba47f17",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:09:46",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N63222",
+        "public_key": "33e7a7ebeadd869fcbfabe11ff0668a6b74790c832889393f4f69fb6ab665773",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:11:47",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N63322",
+        "public_key": "116b0f7669a78c4f8c81e5dcea6e7ed9f01bf5d5478287b5822e51486891060f",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:12:36",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N63332",
+        "public_key": "c4dd4539f69218e968be5b81ea32e2c3d9b811ac45a8d8e979cc10ec7874eb27",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-21 05:13:49",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:10:16",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.37617091704827,
+                "longitude": -164.9499329104611
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:31:29",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.47004738264671,
+                "longitude": -165.0091035881182
+            }
+        }
+    },
+    {
+        "identifier": "N63333",
+        "public_key": "7df116e86c8c3e8211a8278102ec4c907c592fb2f0b8c68a5e6c756f811fb15d",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:31:47",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N64533",
+        "public_key": "8042aa8be8574d15eab20d85022a9e5b4a89b65adcfcfe2da061c547ee66ced8",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:31:53",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N66733",
+        "public_key": "7df39f23808d7cc19afe6859494e1c18f3aa1d982f3437ea5bba6fe4c21c97ee",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:34:49",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:46:54",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.40065538446474,
+                "longitude": -165.00014483036986
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:48:52",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.40824338143123,
+                "longitude": -165.0152653856017
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:49:30",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.40913578439776,
+                "longitude": -165.02423093889104
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:53:12",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.39485786799773,
+                "longitude": -165.05267931669846
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:55:38",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.40364933662322,
+                "longitude": -165.07432283836727
+            }
+        }
+    },
+    {
+        "identifier": "N12345",
+        "public_key": "e98ff8ef26b24392f668896dc49ed6d78d4cdb574cab8ee2ac84af63e37a26f9",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-22 00:59:09",
+            "location": "Antarctic Ocean",
+            "geolocation": {
+                "latitude": -72.41099374246237,
+                "longitude": -165.02789559512752
+            }
+        }
     }
 ]
