@@ -167,5 +167,135 @@
                 "longitude": 30.48166415754043
             }
         }
+    },
+    {
+        "identifier": "N21122",
+        "public_key": "d46c794db25e8ea221f0a415d660bdf324dbd0adc1b6b963a649fc789d2328ac",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 02:48:59",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N21112",
+        "public_key": "375cba892a5bd3e4702a7f17ea7e7652ff5a00f3bf1807e4c2cc801694ddc1cb",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 02:55:53",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N21111",
+        "public_key": "a1bdda2c5d4bb8631d392039ad73bdf274ea3563291359d5fd34518e2a66b790",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 02:58:27",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N31111",
+        "public_key": "1e06aee44f5b285d4c35448233edb57fda4bb3611116d2deb472d88be4217cde",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:04:20",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N32111",
+        "public_key": "4e36f25bdeb80bfbab3bf4e66083cae1a31bba55a4650bf115930cd66e057e6e",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:10:26",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N32211",
+        "public_key": "235d80011fcf171c824b0fbb31241558426badfdff4dad0bcf0d33e1f472a87d",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:18:06",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N32221",
+        "public_key": "18d10521df11e149ca9921c7480915df487c7ac48c02fcb5a3b395f53957c137",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:24:29",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N32222",
+        "public_key": "6a1d612318876e94f47d9c56843d3b44ac1e5047e5fc0b1b36b6e9c75d3ea181",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:26:01",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N42222",
+        "public_key": "3adc460b051a6f60abad083a56dd034f866fbcc7606d40981803b54186db5e39",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:26:22",
+            "location": "",
+            "geolocation": {
+                "latitude": null,
+                "longitude": null
+            }
+        }
+    },
+    {
+        "identifier": "N42222",
+        "public_key": "3adc460b051a6f60abad083a56dd034f866fbcc7606d40981803b54186db5e39",
+        "metadata": {
+            "agent_type": "Ship",
+            "timestamp": "2024-11-28 03:26:42",
+            "location": "Pacific Ocean",
+            "geolocation": {
+                "latitude": 6.281863194342179,
+                "longitude": -82.2708523181206
+            }
+        }
     }
 ]

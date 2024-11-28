@@ -1,10 +1,10 @@
 from flask import Blueprint, request, jsonify
 from http import HTTPStatus 
 import asyncio
-from app.services import AgentService
-from ..services.locationService import LocationService
-from ..services.blockService import BlockService
-from ..services.dockerService import DockerService
+from services import AgentService
+from services import LocationService
+from services import BlockService
+from services import DockerService
 
 # Definindo os blueprints para login e adicionar agente
 login_routes = Blueprint('login', __name__)
