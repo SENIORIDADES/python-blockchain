@@ -22,7 +22,7 @@ class BlockService:
             "previous_hash": "00000000000000000000000000000000",
             "data": {
                 "client": "PetroLocus",
-                "description": "Registro de jazidas de Petróleo",
+                "description": "Registro de jazidas de Petroleo",
                 "security_protocols": ["HTTP/JSON"],
                 "consensus_mechanism": "Majority Consensus",
                 "technology_integration": ["Drones", "navios"],

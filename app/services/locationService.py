@@ -90,34 +90,34 @@ class LocationService():
       return new_latitude, new_longitude
 
     @staticmethod
-    def _get_location_coordinates(agent: dict, time: str, ocean_locations: dict):
-      """
-      Se o agente não tiver uma localização no metadata,
-      sorteia uma localização aleatória e retorna o nome do oceano.
-      Caso contrário, retorna a localização do agente. 
-      """
-      if agent:        
-        agent_type = agent.get("agent_type")
-        ocean_name = agent.get("location")
-        geolocation = agent.get("geolocation", {})
-    
-        latitude = geolocation.get("latitude")
-        longitude = geolocation.get("longitude")
+    def _get_location_coordinates(agent: dict, time: float, ocean_locations: dict):
+        """
+        Se o agente não tiver uma localização no metadata,
+        sorteia uma localização aleatória e retorna o nome do oceano.
+        Caso contrário, retorna a localização do agente. 
+        """
+        if agent:        
+            agent_type = agent.get("agent_type")
+            ocean_name = agent.get("location")
+            geolocation = agent.get("geolocation", {})
+        
+            latitude = geolocation.get("latitude")
+            longitude = geolocation.get("longitude")
 
-        if latitude is not None and longitude is not None:
-                  
-          if agent_type == "Ship":
-            speed = 30  # Velocidade média de um navio em km/h
-          elif agent_type == "Drone":
-            speed = 80  # Velocidade média de um drone em km/h
-          
-          
-          new_latitude, new_longitude = LocationService._calculate_new_coordinate(
-              latitude, longitude, speed, float(time)
-          )
+            if latitude is not None and longitude is not None:
+                   
+                if agent_type == "Ship":
+                    speed = 30  # Velocidade média de um navio em km/h
+                elif agent_type == "Drone":
+                    speed = 80  # Velocidade média de um drone em km/h
+            
+                new_latitude, new_longitude = LocationService._calculate_new_coordinate(
+                    latitude, longitude, speed, float(time)
+                )
+                print(f"Debugando {new_latitude}{new_longitude}")
 
-        return new_latitude, new_longitude, ocean_name
-      else:
+                return new_latitude, new_longitude, ocean_name
+      
         #Escolhendo um oceano aleatóriamente do dicionário
         ocean_name = random.choice(list(ocean_locations.keys()))
         
@@ -127,7 +127,7 @@ class LocationService():
         latitude = random.uniform(lat_min, lat_max)  
         longitude = random.uniform(lon_min, lon_max)  
 
-      return latitude, longitude, ocean_name
+        return latitude, longitude, ocean_name
     
     @staticmethod
     def locationService(identifier: str):
@@ -160,7 +160,7 @@ class LocationService():
                 time_diff = 0  # Se não houver timestamp, não calcula a diferença de tempo
             
             latitude, longitude, ocean_name = LocationService._get_location_coordinates(
-                agent['data']['metadata'], time_diff, ocean_locations
+                agent['data']['metadata'], float(time_diff), ocean_locations
             )
             
             # Montando o novo metadata

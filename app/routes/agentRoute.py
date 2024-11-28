@@ -1,5 +1,6 @@
 from flask import Blueprint, request, jsonify
 from http import HTTPStatus 
+import asyncio
 from app.services import AgentService
 from ..services.locationService import LocationService
 from ..services.blockService import BlockService
@@ -157,6 +158,14 @@ def update_agent():
         print("Debug: Iniciando autenticação blockchain...")
         block_service = BlockService()
         block_service.add_block(response["data"])
+
+        print("Debug: Acessando a rede...")
+        container_service = DockerService()
+        print(f"Debug: Container{container_service}")
+        container_service.start_container(identifier_request)
+
+        docker_service = DockerService()
+        asyncio.run(docker_service.send_broadcast(response["data"]))
         return jsonify({"Message": "Agente atualizado com sucesso", 
                         "data": response["data"]}), HTTPStatus.OK
 
