@@ -28,7 +28,7 @@ COPY . /app
 ENV PATH="/app/venv/bin:$PATH"
 
 # Expondo a porta para o servidor Flask
-EXPOSE 5000
+EXPOSE 5000:5001
 
 # Comando para rodar a aplicação
 CMD ["python3", "main.py"]

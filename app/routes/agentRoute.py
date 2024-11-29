@@ -113,7 +113,8 @@ def add_agent():
 
     except Exception as e:
         # Se ocorrer um erro, retorna erro 500
-        return jsonify({"Message": f"Ocorreu um erro: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR
+        return jsonify({
+            "Message": f"Ocorreu um erro: {str(e)}"}), HTTPStatus.INTERNAL_SERVER_ERROR
 
 @update_agents_routes.route('/updateAgent', methods=['PUT'])
 def update_agent():
@@ -150,22 +151,23 @@ def update_agent():
         
         # Chama o serviço para atualizar as informações do agente
         response = AgentService.update_agent(identifier_request, new_metadata)
-        
+
         if not response["success"]:
             print("Debug: Falha ao iniciar autenticação blockchain")
-            return jsonify({"Message": response["error"]}), HTTPStatus.BAD_REQUEST 
+            return jsonify({"Message": response["error"]}), HTTPStatus.BAD_REQUEST
+         
         # Retorna a resposta de sucesso com os dados atualizados
         print("Debug: Iniciando autenticação blockchain...")
         block_service = BlockService()
-        block_service.add_block(response["data"])
+        new_block = block_service.add_block(response["data"])         
 
         print("Debug: Acessando a rede...")
         container_service = DockerService()
-        print(f"Debug: Container{container_service}")
         container_service.start_container(identifier_request)
 
+        print(f"Debug: Iniciando broadcast...")
         docker_service = DockerService()
-        asyncio.run(docker_service.send_broadcast(response["data"]))
+        asyncio.run(docker_service.send_broadcast(new_block["block"],identifier_request))
         return jsonify({"Message": "Agente atualizado com sucesso", 
                         "data": response["data"]}), HTTPStatus.OK
 

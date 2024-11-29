@@ -59,7 +59,6 @@ class BlockService:
             genesis_block = self._create_genesis_block()
             self.chain.append(genesis_block)
             print("Debug: Bloco gênesis criado com sucesso")
-            JsonService.save_json(self.json_path, self.chain)
 
         # Adiciona um novo bloco
         print("Debug: Adicionando novo bloco...")
@@ -71,7 +70,8 @@ class BlockService:
         new_block["hash"] = self._calculate_hash(new_block)
         self.chain.append(new_block)
 
-    
-        # Salva a blockchain
-        JsonService.save_json(self.json_path, self.chain)
-        print(f"Debug: Novo bloco adicionado com sucesso")
+        return{
+                "success": True,
+                "block": self.chain,
+                "error": ""  
+            }

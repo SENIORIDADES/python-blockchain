@@ -24,8 +24,8 @@ class AgentService:
         # Iterando sobre os agentes para encontrar o correspondente
         for agent in agents:
             if agent['identifier'] == identifier:
-                    print(f"Debug: Agente encontrado")
-                    return agent
+                print(f"Debug: Agente encontrado")
+                return agent
 
         print("Debug: Agente não encontrado.")
         return None
@@ -193,7 +193,8 @@ class AgentService:
             log_entries = JsonService.load_json(filename)
             log_entries.append(new_log_entry)
             JsonService.save_json(filename, log_entries)
-            print("Debug: Novo registro adicionado ao log...") 
+            print("Debug: Novo registro adicionado ao log...")
+            print(f"Debug: {new_log_entry}")
 
         except Exception as e:
             print(f"Debug: Erro ao manipular o arquivo JSON: {e}")

@@ -38,56 +38,56 @@ class LocationService():
 
     @staticmethod
     def _get_last_agent(filename: str, identifier: str):
-      """
-      Busca o último agente no log JSON com o identificador fornecido e
-      retorna o agente com o timestamp mais recente.
-      """    
-      try:
-        agents = JsonService.load_json(filename)
-        agent_load = [agent for agent in agents if agent['identifier'] == identifier]
-        if not agent_load:
-            return {
-                "success": False,
-                "data": {},
-                "error": "Agente não encontrado."
-            }
+        """
+        Busca o último agente no log JSON com o identificador fornecido e
+        retorna o agente com o timestamp mais recente.
+        """    
+        try:
+            agents = JsonService.load_json(filename)
+            agent_load = [agent for agent in agents if agent['identifier'] == identifier]
+            if not agent_load:
+                return {
+                    "success": False,
+                    "data": {},
+                    "error": "Agente não encontrado."
+                }
         #Ordena os agentes encontrados pelo timestamp
-        agent_load.sort(key=lambda agent: 
+            agent_load.sort(key=lambda agent: 
                         datetime.datetime.strptime(agent['metadata']['timestamp'],
                                                     "%Y-%m-%d %H:%M:%S"), reverse=True)
-        return {
-              "success": True,
-              "data": agent_load[0], 
-              "error": "" 
-        }
+            return {
+                "success": True,
+                "data": agent_load[0], 
+                "error": "" 
+            }
         
-      except Exception as e:
-          return {
-              "success": False,
-              "data": e,
-              "error": "Agente não encontrado."
-          }
+        except Exception as e:
+            return {
+                "success": False,
+                "data": e,
+                "error": "Agente não encontrado."
+            }
     
     @staticmethod
     def _calculate_new_coordinate(latitude: float, longitude: float, 
                                   speed: float, time: float):
-      """
-      Calcula as novas coordenadas baseadas na velocidade do agente e no tempo decorrido.
-      """ 
-      distance = speed * time  # Distância em km
-      print(f"Debug: A ultima coleta aconteceu faz {time} horas")
+        """
+        Calcula as novas coordenadas baseadas na velocidade do agente e no tempo decorrido.
+        """ 
+        distance = speed * time  # Distância em km
+        print(f"Debug: A ultima coleta aconteceu faz {time} horas")
       
-      delta_latitude = distance / 111.0  # 1 grau ~= 111km
-      delta_longitude = distance / (111.0 * math.cos(math.radians(latitude)))
+        delta_latitude = distance / 111.0  # 1 grau ~= 111km
+        delta_longitude = distance / (111.0 * math.cos(math.radians(latitude)))
 
-      # Define uma direção aleatória entre -180 e 180 graus
-      direction = random.uniform(-180, 180)
+        # Define uma direção aleatória entre -180 e 180 graus
+        direction = random.uniform(-180, 180)
 
-      # Calcula as novas coordenadas
-      new_latitude = latitude + delta_latitude * math.cos(math.radians(direction))
-      new_longitude = longitude + delta_longitude * math.sin(math.radians(direction))
+        # Calcula as novas coordenadas
+        new_latitude = latitude + delta_latitude * math.cos(math.radians(direction))
+        new_longitude = longitude + delta_longitude * math.sin(math.radians(direction))
 
-      return new_latitude, new_longitude
+        return new_latitude, new_longitude
 
     @staticmethod
     def _get_location_coordinates(agent: dict, time: float, ocean_locations: dict):
