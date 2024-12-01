@@ -164,10 +164,10 @@ def update_agent():
         print("Debug: Acessando a rede...")
         container_service = DockerService()
         container_service.start_container(identifier_request)
-
+        
         print(f"Debug: Iniciando broadcast...")
         docker_service = DockerService()
-        asyncio.run(docker_service.send_broadcast(new_block["block"],identifier_request))
+        asyncio.run(docker_service.send_broadcast(new_block['block'],identifier_request))
         return jsonify({"Message": "Agente atualizado com sucesso", 
                         "data": response["data"]}), HTTPStatus.OK
 

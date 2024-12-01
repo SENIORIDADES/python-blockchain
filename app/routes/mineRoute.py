@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from http import HTTPStatus
-from services import jsonService
+from services import JsonService
 
 mine_routes = Blueprint('mine', __name__)
 update_chain_routes = Blueprint('updateChain', __name__)
@@ -29,11 +29,9 @@ def mine():
 @update_chain_routes.route('/updateChain', methods=['POST'])
 def update_chain():
     data = request.json
-
-    filename = jsonService.JsonService.search_json('app/database', 'chain.json')
-
+    
     if 'chain' in data:
-        jsonService.JsonService.save_json(filename, data)
+        JsonService.save_json('/app/database/chain.json', data)
         return {
             "message": "Agente atualizado com sucesso"
         }, HTTPStatus.ACCEPTED

@@ -3,7 +3,6 @@ import requests
 import os
 from http import HTTPStatus 
 from dotenv import load_dotenv
-from dotenv import load_dotenv
 from .jsonService import JsonService
 from docker.errors import NotFound
 
@@ -13,6 +12,7 @@ class DockerService:
     def __init__(self):
         self.client = docker.from_env()  # Usando a API do Docker
         self.network_name = os.getenv("NETWORK_NAME")  # Carrega o nome da rede
+        self.volume_name = os.getenv("VOLUME_NAME")
         self.hostname = os.getenv("HOSTNAME")
         self.filename = JsonService.search_json('app/database', 'chain.json') # Carrega o nome do container atual
         self.chain = JsonService.load_json(self.filename)
@@ -27,27 +27,60 @@ class DockerService:
     def start_container(self, identifier: str):
         """
         Inicia um container para o agente fornecido.
-
-        :param identifier: Identificador único do agente.
         """
         container_name = f"agent_{identifier}"  # Nome do container baseado no identificador
+
+        # Verificar se o contêiner já existe e está em execução
         if self.container_exists(identifier):
             container = self.client.containers.get(container_name)
             if container.status != "running":
                 container.start()
-            else:
-                return container
+            return container
+
         try:
+            # Tenta obter a rede. Se não existir, cria uma nova
+            try:
+                network = self.client.networks.get(self.network_name)
+            except NotFound:
+                network = self.client.networks.create(self.network_name, driver="bridge")
+
+            # Verificar se o volume já existe, se não, cria o volume
+            try:
+                volume = self.client.volumes.get(self.volume_name)
+            except NotFound:
+                volume = self.client.volumes.create(self.volume_name)
+
+            # Verificar se o arquivo chain.json existe no volume
+            volume_path = volume.attrs["Mountpoint"]  # Caminho do volume no host
+            chain_file_path = os.path.join(volume_path, self.filename)
+
+            if not os.path.exists(chain_file_path):
+                init_container = self.client.containers.run(
+                    "petrochain_v1",
+                    name="init_container",
+                    command=f"sh -c 'mkdir -p /app/database && echo \"{{}}\" > /app/database/{self.filename}'",
+                    detach=True,
+                    volumes={volume.name:{"bind": "/app/database", "mode":"rw"}}
+                )
+                init_container.wait()
+                init_container.remove()
+
+            # Criar o container vinculando o volume
             container = self.client.containers.run(
-                "petrochain_v1",  
+                "petrochain_v1",  # Nome da imagem do contêiner
                 name=container_name,
                 command="python3 main.py",
-                ports={'5001/tcp': 5000},
                 detach=True,  # Faz o container rodar em segundo plano
-                environment={"IDENTIFIER": identifier}
+                environment={"IDENTIFIER": identifier},
+                network=network.name,
+                user="1000:1000",
+                volumes={
+                    volume.name: {"bind": "/app/database", "mode": "rw"} 
+                },
             )
             print(f"Debug: Container {container_name} iniciado com sucesso.")
             return container
+
         except Exception as e:
             print(f"Erro ao iniciar container para o agente {identifier}: {str(e)}")
 
@@ -84,12 +117,10 @@ class DockerService:
         approved = 0
         rejected = 0
 
-        for agent in agents:
-            if agent.id == current_agent:
-                continue  # Ignora o container atual     
+        for agent in agents:   
             
             ip_address = agent.attrs['NetworkSettings']['Networks'][self.network_name]['IPAddress']  
-            url = f"http://{ip_address}:5001/mine"  # URL de validação no container
+            url = f"http://{ip_address}:5000/mine"  # URL de validação no container
             print(f"Debug: Tentando conectar ao URL: {url}")
             
             # Realiza a requisição HTTP diretamente dentro do loop, de forma síncrona
@@ -109,13 +140,12 @@ class DockerService:
 
             # Verifica se o consenso foi alcançado
             if approved >= required_votes:
-                ("Debug: Consenso aprovado! Salvando o hash...")
+                print("Debug: Consenso aprovado! Salvando o hash...")
                 self.chain.append(data)
-                JsonService.save_json(self.filename, data)
-                
+
                 for agent in agents:
-                    ip_address = agent.attrs['NetworkSettings']['Networks'][self.network_name]['IPAddress']  
-                    url = f"http://{ip_address}:5001/updateChain"  # URL de validação no container
+                    ip_address = agent.attrs['NetworkSettings']['Networks'][self.network_name]['IPAddress']    
+                    url = f"http://{ip_address}:5000/updateChain"  # URL de validação no container
 
                     response = requests.post(url, json={'chain':self.chain})
                     
