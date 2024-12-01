@@ -32,3 +32,4 @@ class Agent:
             "identifier": self.identifier,
             "public_key": self.public_key,
             "metadata": self.metadata
+        }

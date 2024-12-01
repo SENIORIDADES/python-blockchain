@@ -20,7 +20,7 @@ class JsonService:
         """Carregando dados do arquivo JSON."""
         print(f"Debug: Carregando dados do arquivo {filename}...")
         if not os.path.exists(filename) or os.stat(filename).st_size == 0:
-            print("Debug: Se o arquivo não existe ou está vazio. Se não existir, cria um novo arquivo vazio...")
+            print("Debug: Nenhum dado disponivel")
             with open(filename, 'w') as file:
                 json.dump([], file, indent=4)
             return []
@@ -28,7 +28,7 @@ class JsonService:
         with open(filename, 'r') as file:
             try:
                 data = json.load(file)
-                print(f"Debug: {len(data)} registros carregados do arquivo.")
+                print(f"Debug: {len(data)} registros carregados do arquivo...")
                 return data
             except json.JSONDecodeError:
                 print("Debug: Erro ao decodificar o arquivo JSON.")
@@ -67,7 +67,7 @@ class JsonService:
     @staticmethod
     def save_json(filename: str, data: List[Dict]) -> None:
         """Salvando dados no arquivo JSON."""
-        print(f"Salvando dados no arquivo {filename}...")
+        print(f"Debug: Salvando dados no arquivo {filename}...")
         with open(filename, 'w') as file:
             json.dump(data, file, indent=4)
-        print("Dados salvos com sucesso.")
+        print("Debug: Dados salvos com sucesso.")

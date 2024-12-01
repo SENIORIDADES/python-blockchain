@@ -1,9 +1,9 @@
 from flask import Flask
-from app.routes import register_routes
+from routes import register_routes
 
-app = Flask(__name__)
+app = Flask(_name_)
 
 register_routes(app)
 
-if __name__ == "__main__":
-  app.run(debug=True)
+if _name_ == "_main_":
+  app.run(debug=True, host="0.0.0.0", port=5000)

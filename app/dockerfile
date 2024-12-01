@@ -1,0 +1,56 @@
+# Usando uma imagem base com Python 3.9 slim
+FROM python:3.9-slim
+
+# Definindo argumentos para UID e GID
+ARG UID=1000
+ARG GID=1000
+
+# Atualizando o repositório e instalando pacotes necessários
+RUN apt-get update && apt-get install -y \
+    vim \
+    curl \
+    python3-pip \
+    python3-venv \
+    net-tools \
+    && apt-get clean
+
+# Criando grupo e usuário com UID e GID específicos
+RUN groupadd -g $GID appgroup && \
+    useradd -m -u $UID -g appgroup appuser
+
+# Definindo o diretório de trabalho no container
+WORKDIR /app
+
+# Copiando o arquivo de dependências antes do código
+COPY requirements.txt /app/
+
+# Criando um ambiente virtual para o Python
+RUN python3 -m venv /app/venv
+
+# Instalando as dependências dentro do ambiente virtual
+RUN /app/venv/bin/pip install --no-cache-dir -r requirements.txt
+
+# Copiando o código-fonte para o diretório de trabalho no container
+COPY . /app
+
+# Copiando o script entrypoint.sh e marcando-o como executável
+COPY entrypoint.sh /entrypoint.sh
+RUN chmod +x /entrypoint.sh
+
+# Ajustando permissões para o diretório e arquivos
+RUN chown -R appuser:appgroup /app
+
+# Adicionando o ambiente virtual ao PATH
+ENV PATH="/app/venv/bin:$PATH"
+
+# Expondo a porta para o servidor Flask
+EXPOSE 5000:5000
+
+# Mudando para o usuário com permissões específicas
+USER appuser
+
+# Definindo o entrypoint para executar o script antes do comando principal
+ENTRYPOINT ["/entrypoint.sh"]
+
+# Comando para rodar a aplicação
+CMD ["python3", "main.py"]
