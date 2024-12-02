@@ -112,9 +112,9 @@ vim chain.json # Abre o arquivo no terminal
 ### Observações
   - Todo o projeto foi criado e testado utilizando WSL e insomnia;
   - Em caso de erros com o diretório, reinicie o vscode;
-  - ![Documento 📄](https://drive.google.com/file/d/1beSAXPtCxDlW30BVIGFmyBzj3gJt0AXm/view?usp=sharing)
-  - ![Figma 🖥️](https://www.figma.com/proto/qNjYpo9nwQRPvgBS2nznHp/Petrochain?node-id=1-3&node-type=canvas&t=8nSn6xiesmVJqQQq-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
-  - ![Youtube ▶️](https://youtu.be/cBIKng548y0?si=i-8w9tyF5YGfzAp9)
+  - [Documento 📄](https://drive.google.com/file/d/1beSAXPtCxDlW30BVIGFmyBzj3gJt0AXm/view?usp=sharing)
+  - [Figma 🖥️](https://www.figma.com/proto/qNjYpo9nwQRPvgBS2nznHp/Petrochain?node-id=1-3&node-type=canvas&t=8nSn6xiesmVJqQQq-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1)
+  - [Youtube ▶️](https://youtu.be/cBIKng548y0?si=i-8w9tyF5YGfzAp9)
 
 
 ### Versões:
