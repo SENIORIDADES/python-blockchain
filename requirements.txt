@@ -1,5 +1,0 @@
-docker
-requests
-flask==2.2.3
-werkzeug==2.2.3
-geopy
