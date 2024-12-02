@@ -142,7 +142,7 @@ class DockerService:
             if approved >= required_votes:
                 print("Debug: Consenso aprovado! Salvando o hash...")
                 self.chain.append(data)
-
+                JsonService.save_json(self.filename, data)
                 for agent in agents:
                     ip_address = agent.attrs['NetworkSettings']['Networks'][self.network_name]['IPAddress']    
                     url = f"http://{ip_address}:5000/updateChain"  # URL de validação no container
